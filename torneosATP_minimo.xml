@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<torneosATP>
+    <torneo>
+        <nombre> </nombre> 
+        <fechaIni> </fechaIni>
+        <fechaFin> </fechaFin>
+        <puntosATP>
+            <ronda>
+            </ronda>
+            <ronda>
+            </ronda>
+            <ronda>
+            </ronda>
+        </puntosATP>
+        <cuadro>
+            <cruce>
+                <jugador nombre="", rankingTorneo="" >
+            </cruce>
+        </cuadro>
+        <partidos>
+            <partido estado="">
+                <tipo>
+                </tipo>
+                <jugadores>
+                    <lado1>
+                        <jugador nombre="", rankingTorneo=""> </juagdor>
+                    </lado1>
+                    <lado2>
+                        <jugador nombre="", rankingTorneo=""> </jugador>
+                    </lado2>
+                </jugadores>
+                <resultado>
+                    <set numero="">
+                        <juegos lado1="", lado2="">
+                            <puntosJuego lado1="", lado2=""> </puntosJuego>
+                        </juegos>
+
+                    </set>
+                </resultado>
+            </patido>
+        </partidos>
+    </torneo>
+</torneosATP>
