@@ -119,11 +119,21 @@
                     <xs:element name="juegos">
                         <xs:complexType>
                             <xs:attribute name="lado1" type="xs:nonNegativeInteger" use="required">  
-                            <xs:attribute name="lado2"
+                            <xs:attribute name="lado2" type="xs:nonNegativeInteger" use="reuired">
+                        </xs:complexType>
+                    </xs:element>
+                <xs:element name="puntosJuego" minOccurs="0">
+                    <xs:complexType>
+                        <xs:attribute name="lado1" type="puntos" use="required"/>
+                        <xs:attribute name="lado2" type="puntos" use="required"/>
+                    </xs:complexType>
+                </xs:element> 
+                <xs:attribute name="numero" type="xs:postiveInteger" use="required">
+            </xs:complexType>
+        </xs:element>
+    </xs:sequence>
+</xs:complexType>    
     
-
-
-
  <!--Patido-->   
 <xs:complexType name="typePartidos">
     <xs:sequence>
@@ -146,8 +156,7 @@
         </xs:element>
     </xs:sequence>
 </xs:complexType>
-
-
+</xs:schema>
 
            
 
