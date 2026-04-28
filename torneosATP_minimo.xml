@@ -1,40 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <torneosATP>
     <torneo>
-        <nombre> </nombre> 
-        <fechaIni> </fechaIni>
-        <fechaFin> </fechaFin>
+        <nombre>TORNEO LMGSI APT</nombre> 
+        <fechaIni> 28-04-2026</fechaIni>
+        <fechaFin> 21-08-2026</fechaFin>
         <puntosATP>
-            <ronda>
-            </ronda>
-            <ronda>
-            </ronda>
-            <ronda>
-            </ronda>
+            <ronda puntos ="100"> 2da ronda</ronda>
+            <ronda puntos ="250"> 3ra ronda</ronda>
+            <ronda puntos ="450"> cuartos</ronda>
+            <ronda puntos="550"> semis </ronda>
         </puntosATP>
         <cuadro>
             <cruce>
-                <jugador nombre="", rankingTorneo="" >
+                <jugador nombre="Jugador 1", rankingTorneo="4" >
+                <jugador nombre="Jugador 2", rankingTorneo="1" >
             </cruce>
         </cuadro>
         <partidos>
-            <partido estado="">
-                <tipo>
-                </tipo>
+            <partido estado="en_juego">
+                <tipo> Individual masculino</tipo>
                 <jugadores>
                     <lado1>
-                        <jugador nombre="", rankingTorneo=""> </juagdor>
+                        <jugador nombre="Jugador 1", rankingTorneo="4"> </juagdor>
                     </lado1>
                     <lado2>
-                        <jugador nombre="", rankingTorneo=""> </jugador>
+                        <jugador nombre="Jugador 2", rankingTorneo="1"> </jugador>
                     </lado2>
                 </jugadores>
                 <resultado>
-                    <set numero="">
-                        <juegos lado1="", lado2="">
-                            <puntosJuego lado1="", lado2=""> </puntosJuego>
-                        </juegos>
-
+                    <set numero="2">
+                        <juegos lado1="6", lado2="4"> </juegos>
                     </set>
                 </resultado>
             </patido>
