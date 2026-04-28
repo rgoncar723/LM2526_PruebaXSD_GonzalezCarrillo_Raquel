@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<torneosATP>
+<torneosATP
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="torneosATP.xsd">
     <torneo>
         <nombre>TORNEO LMGSI APT</nombre> 
         <fechaIni> 28-04-2026</fechaIni>
