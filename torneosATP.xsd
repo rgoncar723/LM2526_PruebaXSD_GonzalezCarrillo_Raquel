@@ -13,6 +13,7 @@
                             <xs:element name="puntosATP" type ="typePuntosATP">
                             <xs:element name="cuadro" type="typeCuadro">
                             <xs:element name="partidos" type="typePartidos">
+                           
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
