@@ -20,6 +20,18 @@
         </xs:complexType>
     </xs:element>
     <!-- Puntos ATP-->
+        <!--Valores válidos para Ronda-->
+         <xs:simpleType name="rondaValues">
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="2da ronda"/>
+                <xs:enumeration value="3ra ronda"/>
+                <xs:enumeration value="cuartos"/>
+                <xs:enumeration value="semis"/>
+                <xs:enumeration value="finalista"/>
+                <xs:enumeration value="ganador"/>
+            </xs:restriction>
+         </xs:simpleType>
+
     <xs:complexType name="typePuntosATP">
         <xs:sequence>
             <xs:element name="ronda" minOccurs="3" maxOccurs="6">
@@ -34,6 +46,25 @@
         </xs:sequence>
     </xs:complexType>
     <!--Cuadro--> 
-        
+    <xs:complexType name="typeCuadro">
+        <xs:sequence>
+            <xs:element name="cruce" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="jugador" minOccurs="2" maxOccurs="2">
+                            <xs:complexType>
+                                <xs:attribute name="nombre" type="xs:string" use="required"/>
+                                <xs:attribute name="rankingTorneo" type="xs:positiveInteger" use="required"/>
+                            </xs:complexType>
+                        </xs:element>  
+                       </xs:sequence>
+                    <xs:attribute name="numero" type="xs:positiveInteger" use="optional"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+   </xs:complexType>
+   <!--Partido-->
+                 
+
            
 
