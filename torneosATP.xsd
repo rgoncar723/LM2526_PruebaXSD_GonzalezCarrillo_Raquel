@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!--Elemento raíz. torneoATP-->
+    <xs:element name="torneoATP">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="torneo" maxOccurs="unbounded" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string">
+                            <xs:element name="fechaIni" type="xs:date">
+                            <xs:element name="fechaFin" type="xs:date">
+                            <xs:element name="puntosATP" type ="typePuntosATP">
+                            <xs:element name="cuadro" type="typeCuadro">
+                            <xs:element name="partidos" type="typePartidos">
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!-- Puntos ATP-->
+    <xs:complexType name="typePuntosATP">
+        <xs:sequence>
+            <xs:element name="ronda" minOccurs="3" maxOccurs="6">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="rondaValues">
+                            <xs:attribute name="puntos" type="xs:positiveInteger" use="requiered">
+                        </xs:extendion> 
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <!--Cuadro--> 
+        
+           
+
