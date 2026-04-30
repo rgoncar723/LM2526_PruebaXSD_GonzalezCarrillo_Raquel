@@ -1,6 +1,6 @@
 <!ELEMENT torneosATP (torneo+)>
 
-<!ELEMENT torneo (nombre, fechaIni, fechaFin, puntosATP, cuadro, partidos,resultados+)>
+<!ELEMENT torneo (nombre, fechaIni, fechaFin, puntosATP, cuadro, partidos,resultado+)>
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT fechaIni (#PCDATA)>
 <!ELEMENT fechaFin (#PCDATA)>
@@ -22,13 +22,7 @@
 <!ELEMENT tipo (individual_masculino, individual_femenino, dobles_masculino, dobles_femenino, dobles_mixtos) >
 <!ELEMENT jugadores (lado1,lado2)>
 <!ELEMENT lado1 (jugador?)>
-<!ELEMENT jugador EMPTY >
-<!ATTLIST jugador nombre (CDATA) "NN">
-<!ATTLIST jugador rankingTorneo (CDATA) "0">
 <!ELEMENT lado2 (jugador?)>
-<!ELEMENT jugador EMPTY>
-<!ATTLIST jugador nombre CDATA #REQUIRED>
-<!ATTLIST jugador rankingTorneo CDATA #REQUIRED>
 
 <!ELEMENT resultado (set+)>
 <!ELEMENT set (juegos)>
