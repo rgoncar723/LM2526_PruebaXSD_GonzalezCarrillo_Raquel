@@ -1,6 +1,6 @@
 <!ELEMENT torneosATP (torneo+)>
 
-<!ELEMENT torneo (nombre, fechaIni, fechaFin, puntosATP, cuadro, partidos,resultado+)>
+<!ELEMENT torneo (nombre, fechaIni, fechaFin, puntosATP, cuadro, partidos,resultados+)>
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT fechaIni (#PCDATA)>
 <!ELEMENT fechaFin (#PCDATA)>
@@ -19,7 +19,7 @@
 <!ELEMENT partidos (partido+)>
 <!ELEMENT partido (tipo?, jugadores+)> <!--Un partido solo puede ser de un tipo-->
 <!ATTLIST partido estado (en_juego | finalizado) #IMPLIED>
-<!ELEMENT tipo (individual_masculino, individual_femenino, dobles_masculino, dobles_femenino, dobles_mixtos) >
+<!ELEMENT tipo (#PCDATA) >
 <!ELEMENT jugadores (lado1,lado2)>
 <!ELEMENT lado1 (jugador?)>
 <!ELEMENT lado2 (jugador?)>
