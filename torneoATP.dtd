@@ -1,6 +1,6 @@
 <!ELEMENT torneosATP (torneo+)>
 
-<!ELEMENT torneo (nombre, fechaIni, fechaFin, puntosATP, cuadro, partidos,resultados+)>
+<!ELEMENT torneo (nombre, fechaIni, fechaFin, puntosATP, cuadro, partidos,resultado+)>
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT fechaIni (#PCDATA)>
 <!ELEMENT fechaFin (#PCDATA)>
@@ -17,8 +17,8 @@
 <!ATTLIST jugador rankingTorneo CDATA #REQUIRED>
 
 <!ELEMENT partidos (partido+)>
-<!ELEMENT partido (tipo?, jugadores+)> <!--Un partido solo puede ser de un tipo-->
-<!ATTLIST partido estado (en_juego | finalizado) #IMPLIED>
+<!ELEMENT partido (tipo, jugadores+)> <!--Un partido solo puede ser de un tipo-->
+<!ATTLIST partido estado CDATA #IMPLIED>
 <!ELEMENT tipo (#PCDATA) >
 <!ELEMENT jugadores (lado1,lado2)>
 <!ELEMENT lado1 (jugador?)>
