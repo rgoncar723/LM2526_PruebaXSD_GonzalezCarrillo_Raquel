@@ -1,0 +1,43 @@
+<!ELEMENT torneosATP (torneo+)>
+
+<!ELEMENT torneo (nombre, fechaIni, fechaFin, puntosATP, cuadro, partidos,resultados+)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT fechaIni (#PCDATA)>
+<!ELEMENT fechaFin (#PCDATA)>
+
+<!ELEMENT puntosATP (ronda+)>
+<!ELEMENT ronda (#PCDATA)>
+<!ATTLIST ronda puntos (#PCDATA)>
+
+<!ELEMENT cuadro(cruce+)>
+<!ELEMENT cruce(jugador+)>
+<!ATTLIST cruce numero CDATA "1">
+<!ELEMENT jugador>
+<!ATTLIST jugador nombre (#PCDATA) "NN">
+<!ATTLIST jugador rankingTorneo (#PCDATA) "0">
+
+<!ELEMENT partidos (partido+)>
+<!ELEMENT partido (tipo?,jugadores+)> <!--Un paritdo solo puede ser de un tipo-->
+<!ATTLIST partido estado (en_juego|finalizado)>
+<!ELEMENT tipo (individual_masculino|individual_femenino|dobles_masculino|dobles_femenino|dobles_mixtos)>
+<!ELEMENT jugadores (lado1,lado2)>
+<!ELEMENT lado1 (jugador?)>
+<!ELEMENT jugador>
+<!ATTLIST jugador nombre (#PCDATA) "NN">
+<!ATTLIST jugador rankingTorneo (#PCDATA) "0">
+<!ELEMENT lado2 (jugador?)>
+<!ELEMENT jugador>
+<!ATTLIST jugador nombre (#PCDATA) "NN">
+<!ATTLIST jugador rankingTorneo (#PCDATA) "0">
+
+<!ELEMENT resultado(set)>
+<!ELEMENT set (juegos)>
+<!ATTLIST set numero (#PCDATA) "0">
+<!ELEMENT juegos(puntosJuego)>
+<!ATTLIST juegos lado1 (#PCDATA)>
+<!ATTLIST juegos lado2 (#PCDATA)>
+<!ELEMENT puntosJuego (#PCDATA)>
+<!ATTLIST puntosJuego lado1 (#PCDATA)>
+<!ATTLIST puntosJuego lado2 (#PCDATA)>
+
+
